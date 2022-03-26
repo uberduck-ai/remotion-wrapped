@@ -5,7 +5,7 @@ import {GradientCircle} from './GradientCircle';
 import {Wrapped} from './Wrapped';
 
 export const Scene1: React.FC<{sources: string[]}> = ({sources}) => {
-	const images = sources.map((i) => require('./' + i));
+	const images = sources.map((i) => i);
 	const {height} = useVideoConfig();
 	return (
 		<AbsoluteFill>
